@@ -68,7 +68,7 @@ Timeseries<-aggregate(steps~interval,data=new,sum)
 ggplot(Timeseries,aes(x=interval,y=steps))+geom_line()+ggtitle("Time series plot of the average number of steps taken")
 ```
 
-![plot of chunk unnamed-chunk-27](figure/unnamed-chunk-27-1.png)
+![plot of chunk unnamed-chunk-27](https://github.com/Padmaja25/RepData_PeerAssessment1/blob/master/instructions_fig/Pic2.png)
 
 ### The 5-minute interval that, on average, contains the maximum number of steps
 
@@ -139,7 +139,7 @@ daywise<-tapply(dataSet_new$steps,dataSet_new$date,sum)
 hist(daywise,col = "steelblue")
 ```
 
-![plot of chunk unnamed-chunk-33](figure/unnamed-chunk-33-1.png)
+![plot of chunk unnamed-chunk-33](https://github.com/Padmaja25/RepData_PeerAssessment1/blob/master/instructions_fig/Pic3.png)
 
 ### Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
 
@@ -156,5 +156,5 @@ stepsByDay<-aggregate(steps~Week+interval,data = dataSet_new,mean)
 xyplot(steps~interval|Week,data= stepsByDay,layout=c(1,2),type="l")
 ```
 
-![plot of chunk unnamed-chunk-35](figure/unnamed-chunk-35-1.png)
+![plot of chunk unnamed-chunk-35](https://github.com/Padmaja25/RepData_PeerAssessment1/blob/master/instructions_fig/Pic4.png)
 

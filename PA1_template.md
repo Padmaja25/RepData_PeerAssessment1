@@ -48,7 +48,7 @@ Histogram displays steps taken per day
 hist(daywise,col = "steelblue")
 ```
 
-![plot of chunk unnamed-chunk-25](figure/unnamed-chunk-25-1.png)
+![plot of chunk unnamed-chunk-25](https://github.com/Padmaja25/RepData_PeerAssessment1/blob/master/instructions_fig/Pic1.png)
 
 ### Mean and median number of steps taken each day
 
